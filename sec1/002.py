@@ -1,5 +1,3 @@
 if __name__ == "__main__":
     str_002_1, str_002_2 = "パトカー", "タクシー"
-    # str_002_1とstr_002_2の長さが同じであると知っている前提のコーディングです。
-    # あまり良くない？大目に見て
-    print("".join([str_002_1[i]+str_002_2[i] for i in range(len(str_002_1))]))
+    print("".join([one + two for one, two in zip(str_002_1, str_002_2)]))
